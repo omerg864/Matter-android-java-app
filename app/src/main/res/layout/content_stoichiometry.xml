@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_stoichiometry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.og.matter.Stoichiometry"
+    tools:showIn="@layout/app_bar_stoichiometry">
+
+
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/f1"
+        android:maxLines="1"
+        android:hint="@string/forms"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:hint="@string/forms"
+        android:id="@+id/f2"
+        android:layout_alignTop="@+id/f1"
+        android:layout_toRightOf="@+id/f1"
+        android:layout_toEndOf="@+id/f1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mw:"
+        android:id="@+id/textView9"
+        android:gravity="center|right"
+        android:layout_alignBottom="@+id/molar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/f1"
+        android:layout_toLeftOf="@+id/molar1"
+        android:layout_toStartOf="@+id/molar1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/molars"
+        android:id="@+id/molar1"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_below="@+id/f1"
+        android:layout_alignLeft="@+id/f1"
+        android:layout_alignStart="@+id/f1"
+        android:layout_toStartOf="@+id/f2"
+        android:layout_toLeftOf="@+id/f2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/molars"
+        android:maxLines="1"
+        android:id="@+id/molar2"
+        android:gravity="center"
+        android:layout_alignTop="@+id/molar1"
+        android:layout_toRightOf="@+id/molar1"
+        android:layout_alignRight="@+id/f2"
+        android:layout_alignEnd="@+id/f2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n:"
+        android:gravity="center|right"
+        android:textSize="15sp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignBottom="@+id/mol1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/molar1"
+        android:layout_toStartOf="@+id/molar1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mol1"
+        android:maxLines="1"
+        android:hint="@string/mols"
+        android:gravity="center"
+        android:layout_below="@+id/molar1"
+        android:layout_alignLeft="@+id/molar1"
+        android:layout_alignStart="@+id/molar1"
+        android:layout_alignRight="@+id/molar1"
+        android:layout_alignEnd="@+id/molar1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mol2"
+        android:maxLines="1"
+        android:hint="@string/mols"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/mol1"
+        android:layout_alignLeft="@+id/molar2"
+        android:layout_alignStart="@+id/molar2"
+        android:layout_alignRight="@+id/molar2"
+        android:layout_alignEnd="@+id/molar2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m:"
+        android:gravity="center|right"
+        android:textSize="15sp"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_toLeftOf="@+id/mol1"
+        android:layout_alignBottom="@+id/mass1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mass1"
+        android:maxLines="1"
+        android:gravity="center"
+        android:hint="@string/masss"
+        android:layout_below="@+id/mol1"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_alignRight="@+id/mol1"
+        android:layout_alignEnd="@+id/mol1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mass2"
+        android:maxLines="1"
+        android:gravity="center"
+        android:hint="@string/masss"
+        android:layout_below="@+id/mol1"
+        android:layout_toRightOf="@+id/mass1"
+        android:layout_alignRight="@+id/mol2"
+        android:layout_alignEnd="@+id/mol2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(g)V:"
+        android:gravity="center|right"
+        android:textSize="15sp"
+        android:id="@+id/textView12"
+        android:layout_toLeftOf="@+id/mass1"
+        android:layout_alignBottom="@+id/volg1"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volg1"
+        android:maxLines="1"
+        android:hint="@string/volgs"
+        android:gravity="center"
+        android:layout_below="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_alignRight="@+id/mass1"
+        android:layout_alignEnd="@+id/mass1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volg2"
+        android:maxLines="1"
+        android:hint="@string/volgs"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/mass2"
+        android:layout_alignStart="@+id/mass2"
+        android:layout_alignRight="@+id/mass2"
+        android:layout_alignEnd="@+id/mass2"
+        android:layout_alignBottom="@+id/volg1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vm:"
+        android:gravity="center|right"
+        android:textSize="15sp"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_toLeftOf="@+id/volg1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/molvol1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/molvol1"
+        android:maxLines="1"
+        android:hint="@string/molvols"
+        android:gravity="center"
+        android:layout_below="@+id/volg1"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_alignRight="@+id/volg1"
+        android:layout_alignEnd="@+id/volg1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/molvol2"
+        android:maxLines="1"
+        android:hint="@string/molvols"
+        android:gravity="center"
+        android:layout_below="@+id/volg2"
+        android:layout_alignLeft="@+id/volg2"
+        android:layout_alignStart="@+id/volg2"
+        android:layout_alignRight="@+id/volg2"
+        android:layout_alignEnd="@+id/volg2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(l)V:"
+        android:gravity="center|right"
+        android:textSize="15sp"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/molvol1"
+        android:layout_toLeftOf="@+id/molvol1"
+        android:layout_alignBottom="@+id/voll1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voll1"
+        android:maxLines="1"
+        android:hint="@string/volls"
+        android:gravity="center"
+        android:layout_below="@+id/molvol1"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_alignRight="@+id/molvol1"
+        android:layout_alignEnd="@+id/molvol1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voll2"
+        android:maxLines="1"
+        android:hint="@string/volls"
+        android:gravity="center"
+        android:layout_alignTop="@+id/voll1"
+        android:layout_alignLeft="@+id/molvol2"
+        android:layout_alignStart="@+id/molvol2"
+        android:layout_alignRight="@+id/molvol2"
+        android:layout_alignEnd="@+id/molvol2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C:"
+        android:gravity="center|right"
+        android:textSize="15sp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_toLeftOf="@+id/voll1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/con1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/con2"
+        android:maxLines="1"
+        android:hint="@string/cons"
+        android:gravity="center"
+        android:layout_below="@+id/voll2"
+        android:layout_alignLeft="@+id/voll2"
+        android:layout_alignStart="@+id/voll2"
+        android:layout_alignRight="@+id/voll2"
+        android:layout_alignEnd="@+id/voll2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="נקה"
+        android:onClick="clearSto"
+        android:id="@+id/button9"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/con1"
+        android:layout_toEndOf="@+id/con1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="חשב"
+        android:onClick="sto"
+        android:id="@+id/button8"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button9"
+        android:layout_toStartOf="@+id/button9" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/con1"
+        android:maxLines="1"
+        android:hint="@string/cons"
+        android:gravity="center"
+        android:layout_below="@+id/voll1"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toLeftOf="@+id/voll2"
+        android:layout_toStartOf="@+id/voll2" />
+
+</RelativeLayout>

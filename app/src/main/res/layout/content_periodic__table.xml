@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_periodic__table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.og.matter.Periodic_Table"
+    tools:showIn="@layout/app_bar_periodic__table">
+
+    <EditText
+        android:layout_width="60dp"
+        android:hint="הכנס מספר אטומי או סמל"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/element"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_toRightOf="@+id/button10"
+        android:layout_toEndOf="@+id/button10" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="שם:"
+        android:textSize="15sp"
+        android:id="@+id/name"
+        android:layout_below="@+id/element"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="מספר אטומי:"
+        android:textSize="15sp"
+        android:id="@+id/atomic"
+        android:layout_below="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="מספר אלקטרונים:"
+        android:textSize="15sp"
+        android:id="@+id/electrons"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/atomic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="מספר פרוטונים:"
+        android:id="@+id/protons"
+        android:textSize="15sp"
+        android:layout_below="@+id/electrons"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/electrons"
+        android:layout_alignEnd="@+id/electrons"
+        android:layout_alignLeft="@+id/electrons"
+        android:layout_alignStart="@+id/electrons" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="מסה מולרית:"
+        android:textSize="15sp"
+        android:id="@+id/molar"
+        android:layout_below="@+id/protons"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/protons"
+        android:layout_alignStart="@+id/protons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="קטגוריה:"
+        android:textSize="15sp"
+        android:id="@+id/category"
+        android:layout_below="@+id/molar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/molar"
+        android:layout_alignStart="@+id/molar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="סדרה כימית:"
+        android:id="@+id/group"
+        android:textSize="15sp"
+        android:layout_below="@+id/category"
+        android:layout_alignRight="@+id/category"
+        android:layout_alignEnd="@+id/category"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/category"
+        android:layout_alignStart="@+id/category" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="מצא"
+        android:onClick="table"
+        android:id="@+id/button10"
+        android:layout_above="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

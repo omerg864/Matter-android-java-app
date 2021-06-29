@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fattyE">
+        <item>trans</item>
+        <item>cis</item>
+    </string-array>
+    <string-array name="pref_example_list_titles">
+        <item>עברית</item>
+        <item>English (US)</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>Heb</item>
+        <item>Eng</item>
+    </string-array>
+    <string-array name="pref_saveE">
+        <item></item>
+    </string-array>
+    <string-array name="pref_saveV">
+        <item></item>
+    </string-array>
+</resources>

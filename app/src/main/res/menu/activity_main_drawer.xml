@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="בית" />
+        <item
+            android:id="@+id/nav_precipitation"
+            android:icon="@mipmap/ic_h"
+            android:title="@string/title_activity_precipitation" />
+        <item
+            android:id="@+id/nav_stoichiometry"
+            android:icon="@mipmap/ic_he"
+            android:title="@string/title_activity_stoichiometry" />
+        <item
+            android:id="@+id/nav_periodic_table"
+            android:icon="@mipmap/ic_li"
+            android:title="@string/title_activity_periodic__table" />
+        <item
+            android:id="@+id/nav_base_acid"
+            android:icon="@mipmap/ic_be"
+            android:title="@string/title_activity_base__acid" />
+        <item
+            android:id="@+id/nav_dissolving"
+            android:icon="@mipmap/ic_b"
+            android:title="@string/title_activity_dissolving" />
+        <item
+            android:id="@+id/nav_fatty_acid"
+            android:icon="@mipmap/ic_c"
+            android:title="@string/title_activity_fatty__acid" />
+        <item
+            android:id="@+id/nav_equation_balancer"
+            android:icon="@mipmap/ic_n"
+            android:title="@string/title_activity_equation__balancer" />
+    </group>
+</menu>

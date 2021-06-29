@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Matter</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_precipitation">תגובת שיקוע</string>
+    <string name="title_activity_precipitation_ENG">Precipitation Reaction</string>
+    <string name="type_Error">טעות בהקלדה</string>
+    <string name="aq">(aq)</string>
+    <string name="title_activity_stoichiometry_ENG">Stoichiometry</string>
+    <string name="title_activity_stoichiometry">סטוכיומטריה</string>
+    <string name="forms">נוסחא</string>
+    <string name="mols">מול</string>
+    <string name="molars">מסה מולרית</string>
+    <string name="masss">מסה</string>
+    <string name="volls">נפח נוזל</string>
+    <string name="cons">ריכוז</string>
+    <string name="volgs">נפח גז</string>
+    <string name="molvols">נפח מולרי</string>
+    <string name="title_activity_periodic__table">טבלה מחזורית</string>
+    <string name="title_activity_periodic__table_ENG">Periodic_Table</string>
+    <string name="not_Found">לא נמצא</string>
+    <string name="not_Found_Eng">Not Found</string>
+    <string name="title_activity_base__acid">תגובת בסיס/חומצה עם מים</string>
+    <string name="title_activity_base__acid_ENG">Base_Acid</string>
+    <string name="no_Acid">לא חומצה</string>
+    <string name="no_Acid_Eng">Not An Acid</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="H3O">H3O</string>
+    <string name="OH">OH</string>
+    <string name="title_activity_dissolving">המסת חומר יוני במים</string>
+    <string name="title_activity_dissolving_ENG">Dissolving</string>
+    <string name="title_activity_fatty__acid">השוואת חומצות שומן</string>
+    <string name="title_activity_fatty__acid_ENG">Fatty_Acid</string>
+    <string name="title_activity_equation__balancer">מאזן תגובות כימיות</string>
+    <string name="title_activity_equation__balancer_ENG">Equation_Balancer</string>
+    <string name="examples_equations">Ex:\n
+        CaCo3+O2=CO3+CaO\n
+        Cu{2+}+Cl{-}=CuCl2\n
+        H2SO4+H2O=SO4{2-}+H3O{+}</string>
+</resources>
